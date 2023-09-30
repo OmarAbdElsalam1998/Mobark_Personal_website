@@ -1,0 +1,485 @@
+
+@font-face {
+    font-family:"NotoKufiArabic-Bold";
+    src: url(../fonts/NotoKufiArabic-Bold.ttf);
+}
+@font-face {
+    font-family:"NotoKufiArabic-Medium";
+    src: url(../fonts/NotoKufiArabic-Medium.ttf);
+}
+:root{
+    --dark-color:#000;
+    --white-color:#FFF;
+    --brand-color:#F5C332;
+    --light-color:#e4e4e4;
+}
+body{
+    direction: rtl;
+}
+
+.special-heading {
+    text-align: start;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-family: "NotoKufiArabic-Bold",monospace,sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--white-color);
+}
+.special-heading::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 100px;
+    width: 60px;
+    height: 6px;
+    background: var(--brand-color);
+}
+.special-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    width: 60px;
+    height: 6px;
+    background: var(--brand-color);
+}
+
+
+
+@media (max-width:768px) {
+    .special-heading {
+     
+        font-size: 50px;
+    }
+       
+}
+
+/* Start about me section  style*/
+.about-me {
+    padding: 80px 0;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--dark-color);
+}
+.about-me .circles span{
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.about-me .circles span:nth-of-type(1){
+    top: -215px;
+    right: 315px;   
+
+}
+.about-me .circles span:nth-of-type(2){
+    bottom: -140px;
+    left: -140px;
+
+}
+.about-me .circles span:nth-of-type(3){
+    background-color: #f8f8f8;
+
+}
+
+.about-me .personal-info {
+    position: relative;
+    z-index: 1;
+
+}
+
+.about-me .personal-info .special-design span{
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #0C0B0B;
+    transform: rotate(323deg);
+    z-index: -1;
+}
+.about-me .personal-info .special-design span:nth-of-type(1){
+    top: -236px;
+    right: -463px;
+    
+}
+.about-me .personal-info .special-design span:nth-of-type(2){
+    top: -8px;
+    right: -390px;
+    
+}
+.about-me .personal-info .special-design span:nth-of-type(3){
+    top: 220px;
+    right: -317px;
+    
+}
+
+.about-me .personal-info .text{
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    font-size: 30px;
+    color:var(--light-color);
+    margin-bottom: 20px;
+}
+.about-me .personal-info .text span{
+    font-family: "NotoKufiArabic-Bold",monospace,sans-serif;
+
+    font-size: 50px;
+    color: var(--brand-color);
+}
+
+
+
+.about-me .personal-image {
+    display: flex;
+    justify-content: end;
+    position: relative;
+
+
+}
+.about-me .personal-image .animation span{
+    position: absolute;
+    display: block;
+    animation: movingWithScale 20s linear infinite;
+    z-index: 3;
+
+}
+.about-me .personal-image .animation span:nth-of-type(1){
+    background: transparent;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 20px solid #f5c332;
+    bottom: 130px;
+    right: 0;
+
+}
+.about-me .personal-image .animation span:nth-of-type(2){
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f5c332;
+
+    
+}
+.about-me .personal-image .animation span:nth-of-type(3){
+    background-color: #f8f8f8;
+    width: 130px;
+    height: 130px;
+    top: 190px;
+    left: -46px;
+    box-shadow: 0 0 33px #c9c9c996;
+    border-radius: 50%;
+
+    
+}
+.about-me .personal-image .animation span:nth-of-type(4){
+    top: 37px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f5c332;
+}
+.about-me .personal-image .animation span:nth-of-type(5){
+    top: 0;
+    right: 164px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 20px solid #f8f8f8;
+
+}
+@keyframes movingWithScale {
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    50%{
+        transform: translateY(100px) scale(1.2);
+    }
+    100%{
+        transform: translateY(0) scale(1);
+    }
+    
+}
+.about-me  .social-media-accounts {
+    background-color: #0C0B0B;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    border-radius: 100px;
+    box-shadow: 0 0 21px #353535;
+    text-align: center;
+    z-index: 2;
+}
+.about-me  .social-media-accounts ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-me  .social-media-accounts ul li{
+    padding: 20px 40px;
+    display: inline-block;
+   
+}
+
+.about-me  .social-media-accounts ul li a{
+    color:#FFF;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--brand-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 14px 2px #484848;
+    transition: all .3s ease-in-out;
+    
+   
+}
+.about-me  .social-media-accounts ul li a.snapchat{
+    background-color:#fffc00;
+}
+.about-me  .social-media-accounts ul li a.tik-tok{
+    background-color:#000;
+
+}
+.about-me  .social-media-accounts ul li a.instgram{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.about-me  .social-media-accounts ul li a img{
+    z-index: 3
+}
+.about-me  .social-media-accounts ul li a::before{
+    content: "";
+    position: absolute;
+    background: #4f4f5114;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+
+
+}
+.about-me  .social-media-accounts ul li:hover a::before{
+    width: 140%;
+        height: 140%;
+}
+.about-me  .social-media-accounts ul li:hover a{
+    transform: scale(1.1) ;
+}
+
+@media (max-width:768px) {
+
+    .about-me .circles{
+        display: none;
+    }
+    .about-me .personal-info .text{
+        font-size: 25px;
+       
+    }
+    .about-me .personal-info .text span{
+    
+        font-size: 40px;
+    }
+    .about-me  .social-media-accounts{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .about-me  .social-media-accounts ul li{
+        padding: 20px;
+        display: inline-block;
+       
+    }
+    .about-me  .social-media-accounts ul li a{
+      
+        width: 50px;
+        height: 50px;
+    }
+    .about-me .personal-image .animation span:nth-of-type(5){
+        top: -80px;
+        right: 164px;
+  
+    
+    }
+    
+}
+/* End about me section  style*/
+
+
+/* Start contact with me section */
+.contact-with-me{
+    padding: 80px 0;
+    background-color: var(--dark-color  );
+    overflow: hidden;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+
+
+
+}
+.contact-with-me .text{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    margin-bottom: 40px;
+}
+.contact-with-me .text .special-design span{
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #0C0B0B;
+    transform: rotate(37deg);
+    z-index: -1;
+}
+.contact-with-me .text .special-design span:nth-of-type(1){
+    bottom: 420px;
+    right: -317px;
+
+    
+}
+.contact-with-me .text .special-design span:nth-of-type(2){
+    bottom: 192px;
+    right: -390px;
+    
+}
+.contact-with-me .text .special-design span:nth-of-type(3){
+    bottom: -36px;
+
+    right: -463px;
+
+    
+}
+.contact-with-me p{
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    color: var(--light-color);
+
+
+}
+.contact-with-me .contact-form{
+    padding: 60px 30px;
+    background-color: #0c0b0b;
+    border-radius: 15px;
+}
+.contact-with-me .contact-form .form-input{
+    width: 100%;
+    height: 59px;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #2d2b2b;
+    background-color: #0c0b0b;
+    transition: all .4s ease-in-out;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    margin-bottom: 10px;
+    color: var(--light-color);
+}
+
+
+
+.contact-with-me .contact-form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #2d2b2b;
+    background-color: #0c0b0b;
+    transition: all .4s ease-in-out;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    margin-bottom: 10px;
+    color: var(--light-color);
+
+
+}
+.contact-with-me .contact-form .form-input.error,
+.contact-with-me .contact-form textarea.error{
+    border-color: #dc3545;
+
+}
+.contact-with-me .contact-form .form-input:focus,
+.contact-with-me .contact-form textarea:focus{
+    border-color: #4955ef;
+    
+}
+.contact-with-me .contact-form .brand-btn{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    min-width: 150px;
+    border-radius: 10px;
+    background-color: var(--brand-color);
+    color: #FFF;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+
+}
+.contact-with-me   .pop-up-alert-message{
+    position: fixed;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 330px;
+    width: 330px;
+    padding: 20px 10px;
+    color: #FFF;
+    text-align: center;
+    z-index: 99;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    transition: all .6s ease-in-out;
+
+
+}
+.contact-with-me   .pop-up-alert-message.active{
+    bottom: 80px;
+}
+.contact-with-me   .pop-up-alert-message.success{
+    border-right: 10px solid #31da7e;
+    background-color: #31da7e59;
+}
+.contact-with-me   .pop-up-alert-message.error{
+    border-right: 10px solid #a82c2c;
+    background-color: #a82c2c78;
+}
+/* end contact with me section */
+.contact-with-me   .pop-up-alert-message .close-alert{
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    border-radius: 50%;
+    background: #dfdfdf;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+@media (max-width:768px) {
+    .contact-with-me .text .special-design{
+        display: none;
+    }
+    
+}
+
+
+/* Start copy rights section*/
+.copyrights{
+    background-color: #333;
+    text-align: center;
+    font-family: "NotoKufiArabic-Medium",monospace,sans-serif;
+    color: #FFF;
+
+}
+/* End copy rights section*/
