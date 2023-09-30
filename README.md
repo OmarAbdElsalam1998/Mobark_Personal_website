@@ -1,6 +1,6 @@
 <h2>Mobark Personal Page</h2>
 <p>
- this pis a personal website for Mobark El kaby
+ this is a personal website for Mobark El kaby
 
 </p>
 
